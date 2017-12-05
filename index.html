@@ -414,22 +414,27 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-                    <form>
+                    <form action="mailto:info@chessinstitute.net" method="GET">
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name*">
+                                <input name="subject" type="text" class="form-control" id="exampleInputEmail1" placeholder="Subject*">
                             </div>
                         </div>
 
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*">
+                                <input name="from" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*">
                             </div>
                         </div>
-
+                          <fieldset>
+                            <legend>Personalia:</legend>
+                            Name: <input type="text"><br>
+                            Email: <input type="text"><br>
+                            Date of birth: <input type="text">
+                            </fieldset>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group">
-                                <textarea class="form-control txt-area" rows="5" placeholder="Message . . ."></textarea>
+                                <textarea name="body" class="form-control txt-area" rows="5" placeholder="Please provide your name and any other information that you are interested in learning more about . . ."></textarea>
                             </div>
                         </div>
 
